@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Remixicon Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <link href="main.css" rel="stylesheet">
+
+  <!-- Ionicon -->
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <title>TailwindCss Assignment 02</title>
+</head>
+<body>
+  <header class="bg-white py-1">
+    <nav class="flex items-center justify-between container mx-auto px-5">
+        <a href="#">
+            <img src="assest/c4u logo.png" alt="">
+        </a>
+        <div class="nav-links absolute md:static bg-white ] min-h-[60vh] md:min-h-fit left-0 top-[-100%] w-full md:w-auto flex items-center px-5">
+            <ul class="flex flex-col md:flex-row md:items-center md:gap-[4vw] gap-6">
+                <li><a href="#home" class="hover:color">Home</a></li>
+                <li><a href="#about" class="color">About Us</a></li>
+                <li><a href="#skill" class="hover:color">Upskill</a></li>
+                <li><a href="#contact" class="hover:color hover:scale-105">Contact us </a></li>
+            </ul>
+        </div>
+        <button type="submit" class="bg-[#F44335] text-white px-4 py-0.5 rounded-full hover:bg-red-600 hover:scale-105 transition-all duration-300">Register Interest</button>
+        <!-- Menu icon -->
+
+<ion-icon name="menu" class="text-3xl md:hidden" onclick="onToggleMenu(this)"></ion-icon>
+    </nav>
+  </header>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="flex flex-col items-center mx-auto container px-32 pt-8 pb-20 text-[#FAFAFA] md:rounded-es-[40%] md:rounded-ee-[40%]" id="banner">
+        <h4 class="mb-4">Discover - Interact - Engage </h4>
+        <h1 class="mb-4 text-xl md:text-3xl font-bold">Connecting <span class="color underline">talent</span> to <br>opportunity through <span class="color underline">skills</span> </h1>
+        <p class="md:text-[14px] text-xs text-[#999] lg:max-w-96">We forster a skill-focussed environment enabling students to navigate their career with their self-paced learning journey and businesses to gain market-ready talent. </p>
+        <button class="px-4 bg-[#FAFAFA] py-0.5 rounded-full color font-bold hover:bg-slate-300 hover:scale-105 transition-all duration-300 mt-5">Ask questions</button>
+    </div>
+  </section>
+  <!-- card section -->
+  <section class="container grid grid-cols-12 mt-10 gap-4 bg-[#F5F5F5] mx-auto md:px-8">
+    <section class="md:col-span-3 col-span-12 mx-4 flex items-center justify-center font-bold text-3xl">
+      <div class="flex md:flex-col gap-2">
+        <h2>At <span class="color underline">C4U</span>,</h2>
+      <h2> 
+        We Empower: </h2>
+      </div>
+      
+    </section>
+    <section class="md:col-span-3 col-span-12 mx-4 bg-[#2D3142] text-white rounded-md">
+      <div class="p-4">
+        <img src="assest/Group 1.png" alt="" class="bg-white p-3 rounded-full">
+        <h3 class="text-2xl font-bold mb-2">Students</h3>
+        <p class="md:text-xs text-[#999]">We help students find their way in a fast-evolving world by creating a personalised learning journey guaranteed to help stand out in a crowded job market.</p>
+      </div>
+    </section>
+    <section class="md:col-span-3 col-span-12 mx-4 bg-[#2D3142] text-white rounded-md">
+      <div class="p-4">
+        <img src="assest/Group 2.png" alt="" class="bg-white p-3 rounded-full">
+        <h3 class="text-2xl font-bold mb-2">Universities </h3>
+        <p class="md:text-xs text-[#999]">We help students find their way in a fast-evolving world by creating a personalised learning journey guaranteed to help stand out in a crowded job market.</p>
+      </div>
+    </section>
+    <section class="md:col-span-3 col-span-12 mx-4 bg-[#2D3142] text-white rounded-md">
+      <div class="p-4">
+        <img src="assest/Group 3.png" alt="" class="bg-white p-3 rounded-full">
+        <h3 class="text-2xl font-bold mb-2">Businesses</h3>
+        <p class="md:text-xs text-[#999]">We help students find their way in a fast-evolving world by creating a personalised learning journey guaranteed to help stand out in a crowded job market.</p>
+      </div>
+    </section>
+  </section>
+
+  <!-- About section -->
+   <section class="bg-[#F5F5F5] container mx-auto md:py-28" id="about">
+    <section class="container grid grid-cols-12 pt-36">
+      <section class="md:col-span-5 col-span-12 mx-4 md:mx-0 md:ml-8">
+        <h4 class="color mb-2">About us</h4>
+        <h1 class="font-semi-bold text-2xl text-[#2D3142] mb-4">Our Mission </h1>
+        <p class="mb-5 max-w-96">To create a personalised  pathway for continuous learning and transferrable skills development.</p>
+        <button type="submit" class="about-btn">Find out more
+          <i class="ri-arrow-right-line right"></i>
+        </button>
+      </section>
+<!-- Verticle line -->
+    <section class="relative col-span-1 w-full h-full flex justify-center items-center">
+      <div class="h-full w-1 bg-[#9A9CA5]"></div>
+      <div class="absolute w-6 h-6 rounded-full md:bg-green-500 z-10"></div>
+    </section>
+
+      <section class="md:col-span-5 col-span-12 mx-4 md:mx-0 md:mr-8 mt-12 md:mt-0">
+        <div class="flex justify-between">
+          <div>
+            <img src="assest/top left-1.png" alt="">
+            <img src="assest/bottom-1.png" class="ml-24 mt-40" alt="">
+          </div>
+          <div class="flex justify-center items-center">
+            <img src="assest/center 1.png" class="bg-center" alt="">
+          </div>
+          <div>
+            <img src="assest/top right-1.png" alt="" class="-mt-24">
+            <img src="assest/right bottom 1.png" alt="" class="ml-10 mt-20">
+            
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+    <section class="container grid grid-cols-12 gap-10 pt-36">
+      <section class="md:col-span-5 col-span-12 mx-4 md:mx-0 md:ml-8">
+        <div class="flex justify-between">
+          <div>
+            <img src="assest/top left-2.png" alt="">
+            <img src="assest/bottom-2.png" class="ml-24 mt-40" alt="">
+          </div>
+          <div class="flex justify-center items-center">
+            <img src="assest/center-2.png" class="bg-center" alt="">
+          </div>
+          <div>
+            <img src="assest/top right-2.png" alt="" class="-mt-24">
+            <img src="assest/right bottom-2.png" alt="" class="ml-10 mt-20">
+            
+          </div>
+        </div>
+      </section>
+<!-- Verticle line -->
+    <section class="relative col-span-1 w-full h-full flex justify-center items-center">
+      <div class="h-full w-1 bg-[#9A9CA5]"></div>
+      <div class="absolute w-6 h-6 rounded-full md:bg-green-500 z-10"></div>
+    </section>
+
+      <section class="md:col-span-5 col-span-12 mx-4 md:mx-0 md:mr-8 mb-12 md:mb-0">
+        <h4 class="color mb-2">ABOUT US </h4>
+        <h1 class="font-semi-bold text-2xl text-[#2D3142] mb-4">Our Vision</h1>
+        <p class="mb-5 max-w-96">To have a globally recognised strategic bridge between education and the job market</p>
+        <button type="submit" class="about-btn">Contact us
+          <i class="ri-arrow-right-line right"></i>
+        </button>
+      </section>
+    </section>
+   </section>
+   <!-- Skill section -->
+    <section class="bg-[#FFFFFF]" id="skill">
+      <div class="container mx-4 md:mx-auto flex gap-8 py-12">
+        <div>
+          <img src="assest/Frame (1).png" class="mb-3" alt="">
+          <h3 class="font-bold text-xl mb-3">Interact</h3>
+          <p class="text-xs text-[#333]">We open doors to new opportunities by expanding your transferrable skills</p>
+        </div>
+        <div>
+          <img src="assest/Frame (2).png" class="mb-3" alt="">
+          <h3 class="font-bold text-xl mb-3">Engage</h3>
+          <p class="text-xs text-[#333]">To forester a skill focussed environment that enable students to navigate their ideal career</p>
+        </div>
+        <div>
+          <img src="assest/Frame (3).png" class="mb-3" alt="">
+          <h3 class="font-bold text-xl mb-3">Engage</h3>
+          <p class="text-xs text-[#333]">To forester a skill focussed environment that enable students to navigate their ideal career</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+     <section class="container md:mx-auto mx-4 bg-[#F9CCC726]" id="contact">
+      <div class="pt-20 ml-8 flex rounded-full">
+        <h1 class="font-bold text-3xl md:max-w-80">The Creative Team behind <span class="color underline">the door</span></h1>
+        <img src="assest/Arrow_10.png" class="-ml-20 mt-8" alt="">
+      </div>
+      <!-- Our Team -->
+     <section class="container md:mx-auto mx-4 grid grid-cols-12 py-10 gap-2 md:gap-4 bg-[#F5F5F5]">
+      <section class="md:col-span-3 col-span-6 mx-4 md:mx-0 md:ml-8">
+        <div class="bg-[#FFFFFF] md:p-10 p-8 shadow-md rounded-[30px]">
+          <img src="assest/image 1.png" alt="" class="w-[100px]">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-xl font-bold mb-3">Ekta Mahajan</h1>
+        <p class="text-lg text-[#666] mb-2">Founder & C.E.O</p>
+        <div class=" social-icon">
+          <i class="ri-phone-fill social-link"></i>
+          <i class="ri-mail-fill social-link"></i>
+          <i class="ri-linkedin-fill social-link"></i>
+        </div>
+        </div>
+        </div>
+      </section>
+      <section class="md:col-span-3 col-span-6 mx-4 md:mx-0">
+        <div class="bg-[#FFFFFF] md:p-10 p-8 shadow-md rounded-[30px]">
+          <img src="assest/image 2.png" alt="" class="w-[100px]">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-xl font-bold mb-3">Toby R Potter</h1>
+        <p class="text-lg text-[#666] mb-2">Product Manager</p>
+        <div class=" social-icon">
+          <i class="ri-phone-fill social-link"></i>
+          <i class="ri-mail-fill social-link"></i>
+          <i class="ri-linkedin-fill social-link"></i>
+        </div>
+        </div>
+        </div>
+      </section>
+      <section class="md:col-span-3 col-span-6  mx-4 md:mx-0 mt-6 md:mt-0">
+        <div class="bg-[#FFFFFF] md:p-10 p-8 shadow-md rounded-[30px]">
+          <img src="assest/image 3.png" alt="" class="w-[100px]">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-xl font-bold mb-3">Ross Davies</h1>
+        <p class="text-lg text-[#666] mb-2">Corporate Growth</p>
+        <div class=" social-icon">
+          <i class="ri-phone-fill social-link"></i>
+          <i class="ri-mail-fill social-link"></i>
+          <i class="ri-linkedin-fill social-link"></i>
+        </div>
+        </div>
+        </div>
+      </section>
+      <section class="md:col-span-3 col-span-6 mx-4 md:mx-0 md:mr-8 mt-6 md:mt-0">
+        <div class="bg-[#FFFFFF] md:p-10 p-8 shadow-md rounded-[30px]">
+          <img src="assest/image 4.png" alt="" class="w-[100px]" >
+        <div class="flex flex-col justify-center">
+          <h1 class="text-xl font-bold mb-3">Leo crozier </h1>
+        <p class="text-lg text-[#666] mb-2">Software Developer</p>
+        <div class="social-icon">
+          <i class="ri-phone-fill social-link"></i>
+          <i class="ri-mail-fill social-link"></i>
+          <i class="ri-linkedin-fill social-link"></i>
+        </div>
+        </div>
+        </div>
+      </section>
+     </section>
+    </section>
+     <!-- Footer -->
+      <footer class="container flex justify-between gap-3 bg-white p-4 mx-auto" id="footer">
+    <div>
+        <img src="assest/c4u logo.png" alt="" class="w-[100px]">
+        <p class="text-[14px]">
+            Level39 <br>
+            One Canada Square, <br> 
+            Canary Wharf, <br> 
+            London, <br> 
+            E14 5AB</p>
+        
+    </div>
+    <div>
+        <h4 class="text-[16px] mb-2 footer-head" >Home</h4>
+        <div class="footer-items">
+            <a href="#" class="footer-list">Collaborations</a>
+            <a href="#" class="footer-list">Statistics</a>
+            <a href="#" class="footer-list">How It Works</a>
+            <a href="#" class="footer-list">Testimonials</a>
+        </div>
+    </div>
+    <div>
+        <h4 class="footer-head">About Us</h4>
+        <div class="footer-items">
+            <a href="#" class="footer-list">Who We Are</a>
+            <a href="#" class="footer-list">Mission statement</a>
+            <a href="#" class="footer-list">Our Vision</a>
+            <a href="#" class="footer-list">The Team</a>
+        </div>
+    </div>
+    <div>
+        <h4 class="footer-head">Upskill</h4>
+        <div class="footer-items">
+            <a href="#" class="footer-list">It Support</a>
+            <a href="#" class="footer-list">Project Managment</a>
+            <a href="#" class="footer-list">Data Analysts</a>
+            <a href="#" class="footer-list">Ux Design</a>
+        </div>
+    </div>
+    <div>
+        <h4 class="footer-head">Contact Us</h4>
+        <div class="footer-items">
+            <a href="#" class="footer-list">Your message</a>
+            <a href="#" class="footer-list">Email</a>
+            <a href="#" class="footer-list">Phone number</a>
+            <a href="#" class="footer-list">Linkedin</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Copyright Section -->
+<div class="flex justify-center py-1 bg-white border-t border-black">
+    <p class="text-[12px]">@Copyright 2025 All rights Reserve by <span class="text-[#00FF84]">Shah_Rakib</span> </p>
+</div>
+
+<!-- Java section -->
+ <script>
+  // Menu
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classList.toggle('top-[9%]')
+    }
+ </script>
+</body>
+</html>
+

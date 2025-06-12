@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .color{
+        @apply text-[#F44335]
+    }
+
+    .about-btn{
+        @apply border border-red-500 px-3 py-0.5 rounded-full hover:bg-red-600 hover:scale-105 transition-all duration-300 hover:text-white
+    }
+
+    .right{
+        @apply hover:scale-x-105;
+    }
+
+    .social-icon{
+        @apply text-[#00FF84] md:text-xl text-xs flex items-center gap-3;
+    }
+    .social-link{
+        @apply bg-[#F5F5F5] p-2 rounded-full;
+    }
+
+    .footer-head{
+        @apply md:text-[20px] text-[16px] mb-2  hover:text-[#00FF84] underline underline-offset-2 hover:underline-offset-4 hover:scale-105 transition-all duration-300;
+    }
+
+    .footer-items{
+        @apply text-[14px] flex flex-col md:gap-1 gap-0.5
+        ;
+    }
+
+    .footer-list{
+        @apply hover:scale-x-105
+    }
+
+    
+
+    
+}
+
+#banner{
+      background: url("assest\home banner.png");  
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+
+    @media (max-width: 480px){
+    #footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
